@@ -1,169 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Htoo Zaw Aung - Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f8f9fa; }
-  .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
-  h1, h2, h3, h4 { color: #0077b6; }
-  img.profile { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #0077b6; object-fit: cover; }
-  .top-section { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-  .social-icons a { margin-right: 10px; color: black; font-size: 28px; }
-  .btn-download { background: #0077b6; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; }
-  hr { border: 0; height: 1px; background: #ccc; margin: 20px 0; }
-  .badges img { margin: 3px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Htoo Zaw Aung — Software Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Htoo Zaw Aung, a Software Engineer specializing in Go, cloud infrastructure, and open-source development.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
+  <nav>
+    <a href="#hero" class="nav-brand">Htoo Zaw Aung</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<div class="top-section">
-  <img src="images/me.jpg" alt="Htoo Zaw Aung" class="profile">
-  <div>
-    <h1>Htoo Zaw Aung (24 yrs)</h1>
-    <p><strong>Software Engineer</strong></p>
-    <div class="social-icons">
-      <a href="https://github.com/zukigit"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/zukilink/"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/zukidono"><i class="fa fa-facebook-square"></i></a>
+  <section id="hero" class="hero">
+    <img src="images/me.jpg" alt="Htoo Zaw Aung" class="avatar">
+    <div class="hero-content">
+      <h1>Htoo Zaw Aung</h1>
+      <p class="tagline">Software Engineer</p>
+      <div class="hero-actions">
+        <a href="resumes/htoozawaung-resume_20260219.pdf" download class="btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#projects" class="btn">
+          <i class="fa-solid fa-code"></i> View Projects
+        </a>
+      </div>
     </div>
-    <p><a href="resumes/htoozawaung-resume_20260219.pdf" download class="btn-download">📄 Download Resume</a></p>
-  </div>
-</div>
+  </section>
 
-<hr>
+  <hr>
 
-<h3>📍 Contact</h3>
-<p><strong>Email:</strong> htoozawaung@proton.me<br>
-<strong>Address:</strong> Bang Chak, Bangkok, Thailand<br>
-<strong>Phone:</strong> +66939402979<br>
-<strong>Nationality:</strong> Myanmar<br>
-<strong>Languages:</strong> Burmese, English, Japanese</p>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Bio</h3>
+        <p>I am a technical leader of a team actively developing open-source software. Experienced with multiple
+          programming languages, frameworks, cloud platforms, and tools. Never tired of learning new technologies.</p>
+      </div>
+      <div class="card">
+        <h3>Details</h3>
+        <ul style="list-style: none; padding-left: 0;">
+          <li><i class="fa-solid fa-location-dot"></i> Bang Chak, Bangkok, Thailand</li>
+          <li><i class="fa-solid fa-flag"></i> Myanmar</li>
+          <li><i class="fa-solid fa-language"></i> Burmese, English</li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:htoozawaung@proton.me">htoozawaung@proton.me</a>
+          </li>
+          <li><i class="fa-solid fa-phone"></i> +66 93 940 2979</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<hr>
+  <hr>
 
-<h3>😊 About Me</h3>
-<p>I am a technical leader of a team actively developing open-source software.</br>
-Experienced with multiple programming languages, frameworks, cloud platforms, and tools.</br>
-Never get bored to learn new technologies.</p>
+  <section id="skills">
+    <h2>Skills</h2>
 
-<hr>
+    <div class="skill-group">
+      <h3>Programming Languages</h3>
+      <div class="badges">
+        <span class="badge"><i class="fa-brands fa-golang" style="color: rgb(58, 123, 239);"></i> Golang</span>
+        <span class="badge"><i class="fa-brands fa-java"></i> Java</span>
+        <span class="badge"><i class="fa-brands fa-js"></i> TypeScript</span>
+        <span class="badge"><i class="fa-solid fa-terminal"></i> Bash</span>
+        <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="badge"><i class="fa-solid fa-c"></i> C</span>
+        <span class="badge"><i class="fa-brands fa-dart-lang" style="color: rgb(16, 121, 204);"></i> Dart</span>
+      </div>
+    </div>
 
-<h3>🛠 Skills</h3>
+    <div class="skill-group">
+      <h3>Frameworks</h3>
+      <div class="badges">
+        <span class="badge"><i class="fa-solid fa-martini-glass-citrus"></i> Gin</span>
+        <span class="badge"><i class="fa-brands fa-java"></i> Spring Boot</span>
+        <span class="badge"><i class="fa-brands fa-angular" style="color: rgb(255, 0, 0);"></i> Angular</span>
+        <span class="badge"><i class="fa-brands fa-flutter" style="color: rgb(255, 212, 59);"></i> Flutter</span>
+      </div>
+    </div>
 
-<h4>Programming Languages:</h4>
-<div class="badges">
-<img src="https://img.shields.io/badge/Golang-black?logo=go">
-<img src="https://img.shields.io/badge/Java-black?logo=coffeescript&logoColor=red">
-<img src="https://img.shields.io/badge/Typescript-black?logo=typescript">
-<img src="https://img.shields.io/badge/Bash-black?logo=gnubash">
-<img src="https://img.shields.io/badge/Python-black?logo=python">
-<img src="https://img.shields.io/badge/C%20programming-black?logo=c">
-<img src="https://img.shields.io/badge/Dart-black?logo=dart&logoColor=blue">
-</div>
+    <div class="skill-group">
+      <h3>Linux Distributions</h3>
+      <div class="badges">
+        <span class="badge"><i class="fa-brands fa-debian"></i> Debian</span>
+        <span class="badge"><i class="fa-brands fa-redhat" style="color: rgb(255, 0, 20);"></i> Red Hat</span>
+      </div>
+    </div>
 
-<h4>Frameworks:</h4>
-<div class="badges">
-<img src="https://img.shields.io/badge/Gin-black?logo=gin">
-<img src="https://img.shields.io/badge/Spring-black?logo=spring">
-<img src="https://img.shields.io/badge/Angular-black?logo=angular&logoColor=red">
-<img src="https://img.shields.io/badge/Flutter-black?logo=flutter&logoColor=blue">
-</div>
+    <div class="skill-group">
+      <h3>DevOps &amp; Cloud</h3>
+      <div class="badges">
+        <a href="https://hub.docker.com/u/zukidocker" class="badge" target="_blank">
+          <i class="fa-brands fa-docker" style="color: rgb(16, 121, 204);"></i> Docker
+        </a>
+        <a href="https://gitlab.com/zukigit" class="badge" target="_blank">
+          <i class="fa-brands fa-gitlab"></i> GitLab CI
+        </a>
+        <span class="badge"><i class="fa-brands fa-aws"></i> AWS</span>
+        <span class="badge"><i class="fa-brands fa-google"></i> GCP</span>
+        <span class="badge"><i class="fa-solid fa-robot"></i> Ansible</span>
+      </div>
+    </div>
+  </section>
 
-<h4>Linux Distributions:</h4>
-<div class="badges">
-<img src="https://img.shields.io/badge/Debian-black?logo=debian&logoColor=red">
-<img src="https://img.shields.io/badge/RedHat-black?logo=redhat&logoColor=red">
-</div>
+  <hr>
 
-<h4>DevOps & Cloud:</h4>
-<div class="badges">
-<a href="https://hub.docker.com/u/zukidocker"><img src="https://img.shields.io/badge/Docker-black?logo=docker"></a>
-<a href="https://gitlab.com/zukigit"><img src="https://img.shields.io/badge/GitLab_CI-black?logo=gitlab"></a>
-<img src="https://img.shields.io/badge/Kubernetes-black?logo=kubernetes">
-<img src="https://img.shields.io/badge/AWS-black?logo=AmazonAWS">
-<img src="https://img.shields.io/badge/GCP-black?logo=googlecloud">
-<img src="https://img.shields.io/badge/Ansible-black?logo=ansible&logoColor=red">
-</div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid-2">
 
-<hr>
+      <div class="card">
+        <h3>Jobarranger</h3>
+        <p>Enterprise open-source job scheduler used by many Japanese clients, with configuration management and
+          pipeline automation.</p>
+        <a href="https://www.jobarranger.info/" target="_blank">
+          Visit site <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<h3>💼 Experience</h3>
-<h4>Technical Lead — DAT [Apr 2025–Present]</h4>
-<ul>
-  <li>Developing open-source software that is used by many Japanese clients.</li>
-  <li>Creating both basic and detailed designs for adding new features.</li>
-  <li>Developing new functionality or extending products according to client requirements.</li>
-  <li>Leading release management, including running pipelines, unit tests, and building installers and Docker images.</li>
-  <li>Conducting continuous research and development to improve existing products.</li>
-  <li>Continuously fixing bugs and resolving performance issues reported by customers.</li>
-  <li>Creating and automating infrastructure for integration testing and deployment.</li>
-  <li>Reviewing source code from pull requests and coaching junior developers.</li>
-  <li>Coaching junior staff on handling customer inquiries and approving their replies before sending.</li>
-</ul>
+      <div class="card">
+        <h3>Chat</h3>
+        <p>Self hosted Chat Server</p>
+        <a href="https://github.com/zukigit/chat" target="_blank">
+          View on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<h4>Software Engineer — DAT  [ Feb 2023–Mar 2025]</h4>
-<ul>
-  <li>Developing open-source software used by many Japanese clients.</li>
-  <li>Conducting continuous research and development to improve existing products.</li>
-  <li>Developing new functionality or extending products according to client requirements.</li>
-  <li>Continuously fixing bugs and resolving performance issues reported by customers.</li>
-  <li>Creating and automating infrastructure for integration, unit testing, and deployment.</li>
-  <li>Troubleshooting and resolving customer-reported technical issues.</li>
-  <li>Providing timely and accurate responses to customer inquiries via the ticketing system.</li>
-  <li>Developing and executing unit and integration test cases to ensure application reliability.</li>
-</ul>
+      <div class="card">
+        <h3>Jobarranger Unit Testing Framework</h3>
+        <p>Custom Go-based remote testing framework that runs integration tests over SSH, designed for Jobarranger's
+          CI pipeline.</p>
+        <a href="https://github.com/zukigit/remote_run-go" target="_blank">
+          View on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<h4>Freelance</h4>
-<ul>
-  <li>Designing and implementing scalable cloud infrastructure solutions to support application deployment.</li>
-  <li>Provisioning and managing cloud resources (compute, storage, and networking) for backend services.</li>
-  <li>Implementing CI/CD pipelines integrated with cloud infrastructure.</li>
-  <li>Deploying applications using Compute Engine and Cloud Run.</li>
-</ul>
+      <div class="card">
+        <h3>SSH-Copy-ID for Windows</h3>
+        <p>A Windows-native reimplementation of the Linux <em>ssh-copy-id</em> utility, making SSH key deployment
+          seamless for Windows users.</p>
+        <a href="https://github.com/zukigit/ssh-copy-id-win" target="_blank">
+          View on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<h4>Internship — Ace Inspiration (Sep 2022–Jan 2023)</h4>
-<ul>
-  <li>Developed Java Spring Boot and Angular-based web applications.</li>
-  <li>Performed bug fixing, enhancements, and testing.</li>
-</ul>
+      <div class="card">
+        <h3>Automatic RPM Creation Tool</h3>
+        <p>Automates creation of RPM packages from a structured environment, reducing manual packaging overhead in
+          release workflows.</p>
+        <a href="https://github.com/zukigit/rpm_env" target="_blank">
+          View on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<hr>
+      <div class="card">
+        <h3>Automatic DEB Creation Tool</h3>
+        <p>Counterpart to the RPM tool — automates Debian package creation, streamlining release management for
+          Debian-based distributions.</p>
+        <a href="https://github.com/zukigit/deb_env" target="_blank">
+          View on GitHub <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
 
-<h3>🎓 Education</h3>
-<ul>
-  <li><strong>B.Sc. in Information Technology</strong> (Ongoing), European International University</li>
-  <li>Former <strong>B.C.Sc.</strong> student, University of Computer Studies, Loikaw</li>
-</ul>
+    </div>
+  </section>
 
-<hr>
+  <hr>
 
-<h3>📂 Projects</h3>
-<ul>
-  <li><a href="https://www.jobarranger.info/">Jobarranger</a></li>
-  <li><a href="https://github.com/zukigit/remote_run-go">Jobarranger Unit Testing Framework</a></li>
-  <li><a href="https://github.com/zukigit/ssh-copy-id-win">SSH-Copy-ID for Windows</a></li>
-  <li><a href="https://github.com/zukigit/rpm_env">Automatic RPM Creation Tool</a></li>
-  <li><a href="https://github.com/zukigit/deb_env">Automatic DEB Creation Tool</a></li>
-</ul>
-<hr>
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
 
-<!-- <h3>📊 GitHub Status</h3>
-<div class="badges">
-<img 
-  src="https://github-readme-stats.vercel.app/api?username=zukigit&show_icons=true&count_private=true&line_height=40&line_width=10" 
-  style="max-width:80%;height:auto;display:block;margin:left;"
->
-</div>
-<hr> -->
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h3>Technical Lead</h3>
+          <span class="timeline-company">@ DAT</span>
+          <span class="timeline-date">Apr 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Developing open-source software used by many Japanese clients.</li>
+          <li>Creating both basic and detailed designs for adding new features.</li>
+          <li>Leading release management: pipelines, unit tests, installers and Docker images.</li>
+          <li>Conducting continuous R&amp;D to improve existing products.</li>
+          <li>Reviewing pull requests and coaching junior developers.</li>
+          <li>Coaching junior staff on customer inquiries and approving replies.</li>
+        </ul>
+      </div>
 
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h3>Software Engineer</h3>
+          <span class="timeline-company">@ DAT</span>
+          <span class="timeline-date">Feb 2023 – Mar 2025</span>
+        </div>
+        <ul>
+          <li>Developing open-source software used by many Japanese clients.</li>
+          <li>Developing new functionality according to client requirements.</li>
+          <li>Continuously fixing bugs and resolving performance issues.</li>
+          <li>Creating and automating infrastructure for integration, unit testing, and deployment.</li>
+          <li>Troubleshooting and resolving customer-reported technical issues.</li>
+        </ul>
+      </div>
 
-<p style="text-align:center;">© 2026 Htoo Zaw Aung</p>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h3>Freelance Software Engineer</h3>
+          <span class="timeline-company"></span>
+          <span class="timeline-date">2022 – 2023</span>
+        </div>
+        <ul>
+          <li>Designing and implementing scalable cloud infrastructure solutions.</li>
+          <li>Provisioning and managing cloud resources on GCP and AWS.</li>
+          <li>Implementing CI/CD pipelines integrated with cloud infrastructure.</li>
+          <li>Deploying applications using Compute Engine and Cloud Run.</li>
+        </ul>
+      </div>
 
-</div>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <h3>Software Engineer Intern</h3>
+          <span class="timeline-company">@ Ace Inspiration</span>
+          <span class="timeline-date">Sep 2022 – Jan 2023</span>
+        </div>
+        <ul>
+          <li>Developed Java Spring Boot and Angular-based web applications.</li>
+          <li>Performed bug fixing, enhancements, and testing.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>B.Sc. in Information Technology</h3>
+        <p>European International University<br><em>Ongoing</em></p>
+      </div>
+      <div class="card">
+        <h3>B.C.Sc. (Former Student)</h3>
+        <p>University of Computer Studies, Loikaw</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <div class="contact-items">
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:htoozawaung@proton.me">htoozawaung@proton.me</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+66939402979">+66 93 940 2979</a>
+      </div>
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Bang Chak, Bangkok, Thailand</span>
+      </div>
+    </div>
+    <div class="contact-social">
+      <a href="https://github.com/zukigit" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/zukilink/" target="_blank" aria-label="LinkedIn"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/zukidono" target="_blank" aria-label="Facebook"><i
+          class="fa-brands fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Htoo Zaw Aung
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>
